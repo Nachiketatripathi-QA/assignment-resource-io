@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.688 sec <<< FAILURE!
+getOptionValueMethodShouldReturnOptionValuesFromPropertiesFile(com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...pertiesOptionsIOTest[]"> but was:<...pertiesOptionsIOTest[#Thu Jun 22 12:47:56 IST 2017]">
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest.getOptionValueMethodShouldReturnOptionValuesFromPropertiesFile(PropertiesOptionsIOTest.java:29)
+
+Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.model.Individual.<init>(Individual.java:16)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfIndividuals(TeamsJsonReader.java:70)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfTeams(TeamsJsonReader.java:266)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active(TeamsJsonReaderTest.java:106)
+
+Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.model.Individual.<init>(Individual.java:16)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfIndividuals(TeamsJsonReader.java:70)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfTeams(TeamsJsonReader.java:266)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive(TeamsJsonReaderTest.java:114)
+
+getIndividualById_should_return_Individual_object_matching_id(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException: null Object with null=null not found
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getIndividualById(TeamsJsonReader.java:107)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getIndividualById_should_return_Individual_object_matching_id(TeamsJsonReaderTest.java:61)
+
+getIndividualByName_should_return_Individual_object_matching_name(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException: null Object with null=null not found
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getIndividualByName(TeamsJsonReader.java:131)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getIndividualByName_should_return_Individual_object_matching_name(TeamsJsonReaderTest.java:77)
+
+getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.model.Individual.<init>(Individual.java:16)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfActiveIndividuals(TeamsJsonReader.java:230)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects(TeamsJsonReaderTest.java:41)
+
+getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.model.Individual.<init>(Individual.java:16)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfInactiveIndividuals(TeamsJsonReader.java:177)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects(TeamsJsonReaderTest.java:50)
+
+getListOfIndividuals_should_return_array_list_of_all_individual_objects(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.model.Individual.<init>(Individual.java:16)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfIndividuals(TeamsJsonReader.java:70)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfIndividuals_should_return_array_list_of_all_individual_objects(TeamsJsonReaderTest.java:27)
+
+getListOfTeams_should_return_a_list_if_Team_object_from_db_json(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.model.Individual.<init>(Individual.java:16)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfIndividuals(TeamsJsonReader.java:70)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfTeams(TeamsJsonReader.java:266)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfTeams_should_return_a_list_if_Team_object_from_db_json(TeamsJsonReaderTest.java:91)
+
